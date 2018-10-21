@@ -1,0 +1,147 @@
+// font-family: 'Open Sans', sans-serif;
+@import 'zmienne';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fontOpenSans;
+}
+
+.main-container {
+    width: 90%;
+    margin: auto;
+}
+
+#main-header {
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    color: $colorWhite;
+
+    .fa-university {
+        color: $colorYellow;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+
+    .container-data {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 20px 50px;
+
+        .call-box {
+            display: flex;
+
+            .fa-phone {
+                font-size: 30px;
+                transform: rotateY(180deg);
+                margin-right: 10px;
+                padding-top: 5px;
+            }
+
+            .number {
+                p {
+                    font-size: 12px;
+
+                    &:nth-of-type(2) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 50px;
+
+    .form-box {
+        margin-top: 100px;
+        width: 35%;
+
+        h2 {
+            margin-bottom: 20px;
+
+            span {
+                color: $colorYellow;
+            }
+        }
+
+        form {
+            background-color: $colorBlue;
+            padding: 10px;
+
+            header {
+                margin-bottom: 10px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+                font-family: $fontOpenSans;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: $colorYellow;
+                border: 0;
+            }
+        }
+    }
+
+}
+
+footer {
+    background-color: $colorGrey;
+    color: #fff;
+    padding-bottom: 30px;
+    padding: 50px;
+
+    p {
+        text-align: center;
+    }
+
+    .contact-data {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        .phone-num,
+        .email {
+            flex-basis: 50%;
+            margin-bottom: 30px;
+        }
+
+        .phone-num,
+        .email {
+            i {
+                background-color: $colorYellow;
+                padding: 10px;
+                font-size: 30px;
+                margin-bottom: 10px;
+                color: #000;
+
+            }
+        }
+
+        .phone-num {
+            i {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
